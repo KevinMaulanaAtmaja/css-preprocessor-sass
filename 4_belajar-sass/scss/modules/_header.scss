@@ -1,0 +1,12 @@
+@use 'submodule/mixin' as m;
+
+.header ul {
+    @include m.inline-list();
+    li{
+        background-color: cyan;
+        padding: 0.6em;
+        a{
+            color: white;
+        }
+    }
+}

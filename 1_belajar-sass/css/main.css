@@ -1,0 +1,14 @@
+.main h1, .main p, footer h1, footer p {
+  letter-spacing: 3px;
+}
+
+.footer .footer-heading {
+  font-size: large;
+  background-color: blueviolet;
+}
+.footer .footer-paragraph {
+  font-size: medium;
+  background-color: yellowgreen;
+}
+
+/*# sourceMappingURL=main.css.map */

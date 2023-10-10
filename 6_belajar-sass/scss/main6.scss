@@ -1,0 +1,105 @@
+//Base
+$warna-dasar: salmon;
+h1{
+    color: $warna-dasar;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+//  Build-in Modules: Color
+
+//  adjust-color() :
+/*  adjust-color($color,
+  $red: null, $green: null, $blue: null,
+  $hue: null, $saturation: null, $lightness: null,
+  $whiteness: null, $blackness: null,
+  $alpha: null)
+*/
+
+h1{
+    color: adjust-color($color: $warna-dasar, $blue: 200, $red: -100, $green: 255);
+}
+
+//  adjust-hue($color, $degree);
+h2{
+    color: adjust-hue($warna-dasar, 30deg);
+}
+
+
+//complement($color)
+h3{
+    color: complement($warna-dasar);
+}
+
+
+// darken($color, $amount)
+// lighten($color, $amount)
+h4{
+    // color: darken($warna-dasar, 40);
+    color: lighten($warna-dasar, 5);
+}
+
+
+// saturate($color, $amount)
+h5{
+    // color: saturate($color, $amount);
+    //menambahkan warna
+    color: saturate($warna-dasar, 35%);
+}
+
+h5{
+    // color: desaturate($color, $amount);
+    //menghilangkan warna
+    color: desaturate($warna-dasar, 100%)
+}
+
+
+// grayscale($color)
+#grayscale{
+    color: grayscale($warna-dasar);
+}
+
+// mix($color1, $color2, $weight: 50%)
+#mix{
+    color: mix($warna-dasar, blue, 80%);
+}
+
+
+// fade-in($color, $amount)
+// opacity ditambah amount
+#fade-in{
+    color: fade-in(rgba(250, 120, 114, 0.2), 0.5);
+}
+
+
+// fade-out($color1, $amount)
+// opacity dikurangi amount
+#fade-out{
+    color: fade-out($warna-dasar, 0.4);
+    // color: $warna-dasar;
+}

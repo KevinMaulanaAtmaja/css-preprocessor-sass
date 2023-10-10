@@ -1,0 +1,54 @@
+// nesting
+// .main{
+//     background-color: cyan;
+
+//     .main-heading{
+//         font-size: x-large;
+//     }
+
+//     .main-paragraph{
+//         font-size: small;
+//     }
+// }
+
+
+// mendaftarkan selektor
+.main, footer{
+    h1, p{
+        letter-spacing: 3px;
+    }
+}
+
+// & (parent selector)
+// .main {
+//     .container & {
+//         background-color: salmon;
+//     }
+//     .main-heading{
+//         font-size: larger;
+//     }
+//     &:hover {
+//         background-color: red;
+//     }
+// }
+
+
+// .main{
+//     & &-heading{
+//         background-color: azure;
+//     }
+//     & &-paragraph{
+//         font-family: sans-serif;
+//     }
+// }
+
+.footer{
+    & &-heading{
+        font-size: large;
+        background-color: blueviolet;
+    }
+    & &-paragraph{
+        font-size: medium;
+        background-color: yellowgreen;
+    }
+}

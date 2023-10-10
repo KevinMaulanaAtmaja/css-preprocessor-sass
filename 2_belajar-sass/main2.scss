@@ -1,0 +1,57 @@
+// CSS Variabel
+// agar bisa diakses semua element maka pakai (:root)
+:root{
+    //variabel pakai tanda --
+    --primary-color: cyan;
+    --warna-kedua: red;
+    --warna-text: purple;
+}
+
+body{
+    background: var(--primary-color);
+}
+
+h1{
+    color: var(--warna-text);
+}
+
+// SASS/SCSS Variabel
+$primary-color: salmon;
+$textColor: blue;
+
+h2{
+    color: $primary-color;
+}
+p{
+    color: $textColor;
+}
+
+// var local di SASS
+#var-local{
+    $textColor: green;
+    // utk menjadikan var local menjadi global
+    $textColor: red !global;
+    color: $textColor;
+}
+
+#var-local-ke-global{
+    color: $textColor;
+}
+
+// Map
+
+// dari begini 
+// $alert-danger: red;
+// $alert-warning: orange;
+// $alert-success: green;
+
+// menjadi begini
+$alert: (
+    'danger': red,
+    'warning': orange,
+    'success': green,
+);
+
+#map{
+    color: map-get($alert, 'warning');
+}

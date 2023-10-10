@@ -1,0 +1,35 @@
+:root {
+  --primary-color: cyan;
+  --warna-kedua: red;
+  --warna-text: purple;
+}
+
+body {
+  background: var(--primary-color);
+}
+
+h1 {
+  color: var(--warna-text);
+}
+
+h2 {
+  color: salmon;
+}
+
+p {
+  color: blue;
+}
+
+#var-local {
+  color: green;
+}
+
+#var-local-ke-global {
+  color: red;
+}
+
+#map {
+  color: orange;
+}
+
+/*# sourceMappingURL=main2.css.map */

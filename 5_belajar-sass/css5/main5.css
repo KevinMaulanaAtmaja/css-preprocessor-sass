@@ -1,0 +1,126 @@
+body {
+  min-height: 1000px;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.circle {
+  width: 140px;
+  height: 140px;
+  border: 5px solid white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.nav {
+  background-color: grey;
+  color: white;
+}
+
+.top {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-style: solid;
+  border-width: calc(2em / 2);
+  border-bottom-color: black;
+}
+
+.bottom {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-style: solid;
+  border-width: calc(2em / 2);
+  border-top-color: black;
+}
+
+.right {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-style: solid;
+  border-width: calc(2em / 2);
+  border-left-color: black;
+}
+
+.left {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-style: solid;
+  border-width: calc(2em / 2);
+  border-right-color: black;
+}
+
+.gradient {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.gradient li:nth-child(1) {
+  padding: 4px;
+  background-color: #008f00;
+}
+.gradient li:nth-child(2) {
+  padding: 4px;
+  background-color: #009f00;
+}
+.gradient li:nth-child(3) {
+  padding: 4px;
+  background-color: #00ae00;
+}
+.gradient li:nth-child(4) {
+  padding: 4px;
+  background-color: #00bd00;
+}
+.gradient li:nth-child(5) {
+  padding: 4px;
+  background-color: #00cd00;
+}
+.gradient li:nth-child(6) {
+  padding: 4px;
+  background-color: #00dc00;
+}
+.gradient li:nth-child(7) {
+  padding: 4px;
+  background-color: #00eb00;
+}
+.gradient li:nth-child(8) {
+  padding: 4px;
+  background-color: #00fa00;
+}
+.gradient li:nth-child(9) {
+  padding: 4px;
+  background-color: #0bff0b;
+}
+.gradient li:nth-child(10) {
+  padding: 4px;
+  background-color: #1aff1a;
+}
+
+.socials {
+  font-size: 2em;
+  font-family: Arial;
+  font-weight: bold;
+}
+.socials .yt {
+  color: red;
+}
+.socials .wa {
+  color: green;
+}
+.socials .tw {
+  color: blue;
+}
+
+/*# sourceMappingURL=main5.css.map */
